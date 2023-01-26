@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Tab 1
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <!-- <ion-title size="large">Tab 1</ion-title> -->
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+        </ion-card-content>
+    </ion-card>
+    <br>
+    <ion-grid>
+        <ion-row>
+            <ion-col>1</ion-col>
+            <ion-col>2</ion-col>
+            <ion-col>3</ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+        <ion-slide *ngFor="let card of [0,1,2,3,4,5,6]" class="small-cc">
+            <ion-card class="roundx">
+                <img alt="Silhouette of mountains" src="https://goldsgym.in/uploads/blog/compress-strong-man-training-gym-min.jpg" />
+                <ion-card-header>
+                    <ion-card-title>Card 1</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                    Here's a small text
+                </ion-card-content>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
