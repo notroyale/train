@@ -1,0 +1,37 @@
+.intro-cnt {
+    margin-top: 70%;
+    position: relative;
+}
+
+.intro-btn {
+    display: block;
+    // background-color: #2a292d;
+}
+
+.img-logo {
+    display: block;
+    margin-left: 25%;
+    max-width: 50%;
+}
+
+ion-button {
+    --background: #2a292d;
+    ;
+    --background-hover: #e8b31f;
+    --background-activated: #e8b31f;
+    --background-focused: #e8b31f;
+    --border-radius: 5px;
+    --ripple-color: #e8b31f;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    width: 80%;
+}
+
+.fr {
+    float: right;
+}
+
+.headline-mid {
+    text-align: center;
+    font-size: 30px;
+}

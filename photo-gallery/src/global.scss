@@ -53,3 +53,29 @@
     --ion-color-step-900: #e6e6e6;
     --ion-color-step-950: #f2f2f2;
 }
+@font-face {
+    font-family: switzer;
+    src: url(../src/assets/WEB/fonts/Switzer-Regular.ttf) format("truetype");
+  }
+
+.content-card {
+    background-color: #101119;
+    border-radius: 20px;
+}
+
+.headline-mid {
+    text-align: center;
+    font-size: 30px;
+}
+
+.headline-left {
+    padding: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    font-size: 30px;
+}
+.main-pad{
+    padding: 8%;
+}

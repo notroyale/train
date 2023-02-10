@@ -1,0 +1,43 @@
+.back-button {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.avatar-button {
+    margin-top: 3%;
+    margin-right: 3%;
+}
+.button-clr {
+    color: white;
+}
+
+.dot {
+    height: 3rem;
+    width: 3rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url("https://i0.wp.com/xn--logfolk-p1a.dk/wp-content/uploads/2019/01/portrait-square-12.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  .profile-img {
+    border-radius: 10px;
+  }
+  .qr-btn {
+width: 20px;
+height: 20px;
+left: 337px;
+top: 85px;
+
+background: #000000;
+border-radius: 4px;
+  }
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-bio {
+    font-size: 10px;;
+  }
