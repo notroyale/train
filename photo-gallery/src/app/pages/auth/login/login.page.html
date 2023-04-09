@@ -1,9 +1,62 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+  <ion-row class="mid-row">
+            <ion-img class="small-logo" src="../../../../assets/images/logo-02.png" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+</ion-row>
+
+
+<ion-grid class="main-pad row-content">
+  <form
+      *ngIf="!isLoggedIn"
+      name="form"
+      (ngSubmit)="onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+    <div class="form-group">
+  <ion-row>
+    <ion-col>
+        <ion-label position="stacked" class="flex-label">Username</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="form.username" required #username="ngModel" placeholder="Enter Username.." class="form-control custom"></ion-input>
+        <div *ngIf="username.errors && f.submitted" class="invalid-feedback">
+          Username is required!
+        </div>
+    </ion-col>
+  </ion-row>
+  </div>
+  <div class="form-group">
+  <ion-row>
+    <ion-col>
+        <ion-label position="stacked" class="flex-label" >Password</ion-label>
+        <ion-input placeholder="Enter Password.." class="form-control custom" type="password"  name="password" [(ngModel)]="form.password" required minlength="6" #password="ngModel"></ion-input>
+        <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
+          <div *ngIf="password.errors['required']">Password is required</div>
+          <div *ngIf="password.errors['minlength']">
+            Password must be at least 6 characters
+          </div>
+        </div>
+    </ion-col>
+  </ion-row>
+</div>
+  <div class="form-group">
+  <ion-row class="login-button-area">
+    <ion-col class="login-button-box">
+        <ion-button type="submit" class="intro-btn"  >Log In</ion-button>
+    </ion-col>
+</ion-row>
+</div>
+<div class="form-group">
+  <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger" role="alert">
+    Login failed: {{ errorMessage }}
+  </div>
+</div>
+</form>
+<div class="alert alert-success" *ngIf="isLoggedIn">
+  Logged in as {{ roles }}.
+</div>
+</ion-grid>
 
 </ion-content>

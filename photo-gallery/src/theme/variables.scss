@@ -6,9 +6,17 @@
   font-family: "Switzer";
   src: url("../assets/WEB/fonts/Switzer-Regular.ttf")  format("truetype");; //change url accordingly
   }
+  @font-face {
+    font-family: "Expletus";
+    src: url("../assets/WEB/fonts/ExpletusSans-VariableFont_wght.ttf")  format("truetype");; //change url accordingly
+  }
+  @font-face {
+      font-family: "Karla";
+      src: url("../assets/WEB/fonts/Karla-VariableFont_wght.ttf")  format("truetype");; //change url accordingly
+  }
 :root {
-  --ion-font-family: "Switzer";
-  font-family: "Switzer";
+  --ion-font-family: "Karla";
+  font-family: "Karla";
 
   /** primary **/
   --ion-color-primary: #3880ff;

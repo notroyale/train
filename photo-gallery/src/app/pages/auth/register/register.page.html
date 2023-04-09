@@ -14,39 +14,30 @@
 <ion-grid class="main-pad">
   <ion-row>
     <ion-col>
-      <ion-item>
-        <ion-label position="floating">First Name</ion-label>
-        <ion-input placeholder="Enter text"></ion-input>
-      </ion-item>
+        <ion-label position="stacked" class="flex-label">Name</ion-label>
+        <ion-input placeholder="Custom input" class="custom"></ion-input>
+
     </ion-col>
     <ion-col>
-      <ion-item>
-        <ion-label position="floating">Last Name</ion-label>
-        <ion-input placeholder="Enter text"></ion-input>
-      </ion-item>
+        <ion-label position="stacked" class="flex-label">Last Name</ion-label>
+        <ion-input placeholder="Custom input" class="custom"></ion-input>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-item>
-        <ion-label position="floating">Country</ion-label>
-        <ion-input placeholder="Enter text"></ion-input>
-      </ion-item>
+        <ion-label position="stacked" class="flex-label">Country</ion-label>
+        <ion-input placeholder="Custom input" class="custom"></ion-input>
     </ion-col>
     <ion-col>
-      <ion-item>
-        <ion-label position="floating">City</ion-label>
-        <ion-input placeholder="Enter text"></ion-input>
-      </ion-item>
+        <ion-label position="stacked" class="flex-label">City</ion-label>
+        <ion-input placeholder="Custom input" class="custom"></ion-input>
     </ion-col>
   </ion-row>
-  <ion-item>
-    <ion-select placeholder="Select fruit">
-      <ion-select-option value="apples">Apples</ion-select-option>
-      <ion-select-option value="oranges">Oranges</ion-select-option>
-      <ion-select-option value="bananas">Bananas</ion-select-option>
-    </ion-select>
-  </ion-item>
+  <ion-row>
+    <ion-col>
+        <ion-button class="intro-btn" [routerLink]="['../step1']">Sign Up</ion-button>
+    </ion-col>
+</ion-row>
 </ion-grid>
 
 </ion-content>

@@ -4,7 +4,8 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
+    
     component: TabsPage,
     children: [
       {
